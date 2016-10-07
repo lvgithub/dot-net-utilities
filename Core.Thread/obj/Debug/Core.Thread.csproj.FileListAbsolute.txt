@@ -1,0 +1,12 @@
+J:\DotNetUtilities\Core.Thread\bin\Debug\Core.Thread.dll
+J:\DotNetUtilities\Core.Thread\bin\Debug\Core.Thread.pdb
+J:\DotNetUtilities\Core.Thread\bin\Debug\Common.dll
+J:\DotNetUtilities\Core.Thread\bin\Debug\log4net.dll
+J:\DotNetUtilities\Core.Thread\bin\Debug\Common.pdb
+J:\DotNetUtilities\Core.Thread\obj\Debug\Core.Thread.dll
+J:\DotNetUtilities\Core.Thread\obj\Debug\Core.Thread.pdb
+J:\DotNetUtilities\Core.Thread\obj\Debug\ResolveAssemblyReference.cache
+J:\DotNetUtilities\Core.Thread\bin\Debug\Core.Web.dll
+J:\DotNetUtilities\Core.Thread\bin\Debug\Core.Web.pdb
+J:\DotNetUtilities\Core.Thread\bin\Debug\Core.Common.dll
+J:\DotNetUtilities\Core.Thread\bin\Debug\Core.Common.pdb

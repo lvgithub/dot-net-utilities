@@ -1,0 +1,16 @@
+J:\DotNetUtilities\Core.Flie\bin\Debug\Core.Flie.dll
+J:\DotNetUtilities\Core.Flie\bin\Debug\Core.Flie.pdb
+J:\DotNetUtilities\Core.Flie\obj\Debug\Core.Flie.dll
+J:\DotNetUtilities\Core.Flie\obj\Debug\Core.Flie.pdb
+H:\DotNetUtilities\Core.Flie\bin\Debug\Core.Flie.dll
+H:\DotNetUtilities\Core.Flie\bin\Debug\Core.Flie.pdb
+H:\DotNetUtilities\Core.Flie\obj\Debug\ResolveAssemblyReference.cache
+H:\DotNetUtilities\Core.Flie\obj\Debug\Core.Flie.dll
+H:\DotNetUtilities\Core.Flie\obj\Debug\Core.Flie.pdb
+J:\DotNetUtilities\Core.Flie\bin\Debug\Common.dll
+J:\DotNetUtilities\Core.Flie\bin\Debug\log4net.dll
+J:\DotNetUtilities\Core.Flie\bin\Debug\Common.pdb
+H:\DotNetUtilities\Core.Flie\bin\Debug\Common.dll
+H:\DotNetUtilities\Core.Flie\bin\Debug\log4net.dll
+H:\DotNetUtilities\Core.Flie\bin\Debug\Common.pdb
+J:\DotNetUtilities\Core.Flie\obj\Debug\ResolveAssemblyReference.cache

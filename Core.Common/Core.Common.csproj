@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BF6393B-2915-4E4F-B223-357FAF1C3B2A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core.Common</RootNamespace>
+    <AssemblyName>Core.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\DLL\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConfigHelper.cs" />
+    <Compile Include="CRCUtils.cs" />
+    <Compile Include="EmailHelper.cs" />
+    <Compile Include="EnumHelper.cs" />
+    <Compile Include="EnumUtils.cs" />
+    <Compile Include="IDCardHelper.cs" />
+    <Compile Include="IdentifyEncoding.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RMB.cs" />
+    <Compile Include="SQLInjectionHelper.cs" />
+    <Compile Include="SysHelper.cs" />
+    <Compile Include="TypeTools.cs" />
+    <Compile Include="UIConstants.cs" />
+    <Compile Include="URLHelper.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="分词辅助类\SegList.cs" />
+    <Compile Include="加密解密\AESEncode.cs" />
+    <Compile Include="加密解密\Base64Util.cs" />
+    <Compile Include="加密解密\DEncrypt.cs" />
+    <Compile Include="加密解密\DESEncrypt.cs" />
+    <Compile Include="加密解密\Encrypt.cs" />
+    <Compile Include="加密解密\HashEncode.cs" />
+    <Compile Include="加密解密\MD5Util.cs" />
+    <Compile Include="加密解密\MySecurity.cs" />
+    <Compile Include="加密解密\RSACryption.cs" />
+    <Compile Include="加密解密\RSASecurityHelper.cs" />
+    <Compile Include="反射\Reflect.cs" />
+    <Compile Include="反射\ReflectHelper.cs" />
+    <Compile Include="反射\ReflectionUtil.cs" />
+    <Compile Include="字符串\BytesTools.cs" />
+    <Compile Include="字符串\StringConstants.cs" />
+    <Compile Include="字符串\StringHelper.cs" />
+    <Compile Include="字符串\StringListHelp.cs" />
+    <Compile Include="字符串\UnicodeHelper.cs" />
+    <Compile Include="Tools.cs" />
+    <Compile Include="字符串\ConvertHelper.cs" />
+    <Compile Include="序列化\Serialize.cs" />
+    <Compile Include="序列化\SerializeHelper.cs" />
+    <Compile Include="序列化\Serializer.cs" />
+    <Compile Include="日历\ChineseCalendar.cs" />
+    <Compile Include="日历\CNCalendar.cs" />
+    <Compile Include="日历\CNDateHelper.cs" />
+    <Compile Include="时间操作类\DateTimeHelper.cs" />
+    <Compile Include="时间操作类\DateUtil.cs" />
+    <Compile Include="时间操作类\MyDateTime.cs" />
+    <Compile Include="时间操作类\TimeHelper.cs" />
+    <Compile Include="条形码\BarCodeToHTML.cs" />
+    <Compile Include="正则表达式\RegexHelper.cs" />
+    <Compile Include="汉字转拼音\PinYin.cs" />
+    <Compile Include="汉字转拼音\PinYinUtil.cs" />
+    <Compile Include="音频视频转换类\MediaHandler.cs" />
+    <Compile Include="音频视频转换类\VideoConvert.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="运算\FormulaCalculator.cs" />
+    <Compile Include="运算\FormulaExpress.cs" />
+    <Compile Include="随机数\RandomChinese.cs" />
+    <Compile Include="随机数\RandomHelper.cs" />
+    <Compile Include="验证码\Captcha.cs" />
+    <Compile Include="验证码\UnCodebase.cs" />
+    <Compile Include="验证码\ValidateImage.cs" />
+    <Compile Include="验证码\ValidateImg.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="验证码\YZMHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="日历\CCalendarData.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Core.Web\Core.Web.csproj">
+      <Project>{4D83C1B4-9FAD-4F19-AB2E-28D02A39DF51}</Project>
+      <Name>Core.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

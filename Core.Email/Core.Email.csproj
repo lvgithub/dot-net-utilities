@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A42B6687-26CD-484A-AE7D-001313C78496}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Core.Email</RootNamespace>
+    <AssemblyName>Core.Email</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mime\MediaTypes.cs" />
+    <Compile Include="Mime\MimeEntity.cs" />
+    <Compile Include="Mime\MimeHeaders.cs" />
+    <Compile Include="Mime\MimeReader.cs" />
+    <Compile Include="Mime\QuotedPrintableEncoding.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="邮件2\ConnectCommand.cs" />
+    <Compile Include="邮件2\ConnectResponse.cs" />
+    <Compile Include="邮件2\DeleCommand.cs" />
+    <Compile Include="邮件2\ListCommand.cs" />
+    <Compile Include="邮件2\ListResponse.cs" />
+    <Compile Include="邮件2\MailHeaders.cs" />
+    <Compile Include="邮件2\MailMessageEx.cs" />
+    <Compile Include="邮件2\NoopCommand.cs" />
+    <Compile Include="邮件2\PassCommand.cs" />
+    <Compile Include="邮件2\Pop3Client.cs" />
+    <Compile Include="邮件2\Pop3Command.cs" />
+    <Compile Include="邮件2\Pop3Commands.cs" />
+    <Compile Include="邮件2\Pop3Exception.cs" />
+    <Compile Include="邮件2\Pop3ListItem.cs" />
+    <Compile Include="邮件2\Pop3Response.cs" />
+    <Compile Include="邮件2\Pop3Responses.cs" />
+    <Compile Include="邮件2\Pop3State.cs" />
+    <Compile Include="邮件2\QuitCommand.cs" />
+    <Compile Include="邮件2\RetrCommand.cs" />
+    <Compile Include="邮件2\RetrResponse.cs" />
+    <Compile Include="邮件2\RsetCommand.cs" />
+    <Compile Include="邮件2\Stat.cs" />
+    <Compile Include="邮件2\StatCommand.cs" />
+    <Compile Include="邮件2\StatResponse.cs" />
+    <Compile Include="邮件2\TopCommand.cs" />
+    <Compile Include="邮件2\UserCommand.cs" />
+    <Compile Include="邮件\MailHelper.cs" />
+    <Compile Include="邮件\MailPoper.cs" />
+    <Compile Include="邮件\MailSender.cs" />
+    <Compile Include="邮件\SmtpServerHelper.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
